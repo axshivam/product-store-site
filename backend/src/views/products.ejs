@@ -1,0 +1,127 @@
+<!-- https://fonts.google.com/specimen/Poppins
+https://www.toptal.com/designers/htmlarrows/symbols/
+https://www.bootstrapcdn.com/fontawesome/
+https://fontawesome.com/v4.7/icon/star
+https://loremipsum.io/
+https://drive.google.com/file/d/1GlfF1Gmd1o_pJgm-xKzyv3V4s3QnrVUC/view
+https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-star-o
+Adobe Xd for logo design
+ -->
+ <!DOCTYPE html>
+ <html lang="en-US" dir="ltr">
+   <head>
+     <meta charset="utf-8">
+     <title>All Products | Zeeve Store</title>
+     <link rel="stylesheet" href="css/Style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body>
+       <div class="container">
+         <div class="navbar">
+           <div class="logo">
+             <img src="images/logo1.png" width="125px" alt="Logo Image">
+           </div>
+           <nav>
+             <ul id="MenuItems">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Products</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Account</a></li>
+             </ul>
+           </nav>
+           <img src="images/cart.png" alt="Cart Image" width="30px" height="30px">
+           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+         </div>
+       </div>
+ 
+     <div class="small-container">
+       <!-- ........First Loop Start -->
+       <div class="row row-2">
+           <h2>All Products</h2>
+           <select name="" id="" onchange="jsFunction({});">
+               <option>Default Shorting</option>
+               <option>Sort By Price</option>
+               <option>Sort By Popularity</option>
+               <option>Sort By Rating</option>
+               <option>Sort By Sell</option>
+           </select>
+       </div>
+       <div class="row">
+        <% for(var i=0; i<data.length; i++) {%>
+         <div class="col-4">
+           <img src="images/<%= data[i].image %>" alt="Product 1">
+           <h4><%= data[i].Product_name %></h4>
+           <div class="rating">
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star" aria-hidden="true"></i>
+             <i class="fa fa-star-o" aria-hidden="true"></i>
+           </div>
+           <p>$<%= data[i].Price %></p>
+         </div>
+         <% } %>
+       </div>
+       <div class="page-btn">
+         <span><a href="#">1</a></span>
+         <span><a href="#">2</a></span>
+         <span><a href="#">3</a></span>
+         <span><a href="#">4</a></span>
+         <span>&#8594;</span>
+       </div>
+
+     </div>
+ 
+     <!-- Footer -->
+     <div class="footer">
+       <div class="container">
+         <div class="row">
+           <div class="footer-col-1">
+             <h3>Download Our App</h3>
+             <p>Download App for Android and Ios Mobile Phone.</p>
+             <div class="app-logo">
+               <img src="images/play-store.png" alt="">
+               <img src="images/app-store.png" alt="">
+             </div>
+           </div>
+           <div class="footer-col-2">
+             <img src="images/logo1.png" alt="">
+             <p>Our Purpose Is to Sustainably Make the Pleasure and Benefits of Sports Accessible to the many.</p>
+           </div>
+           <div class="footer-col-3">
+             <h3>Useful Links</h3>
+             <ul>
+               <li>Coupons</li>
+               <li>Blog Post</li>
+               <li>Return Policy</li>
+               <li>Join Affiliate</li>
+             </ul>
+           </div>
+           <div class="footer-col-4">
+             <h3>Follow Us</h3>
+             <ul>
+               <li>Facebook</li>
+               <li>Twitter</li>
+               <li>Instagram</li>
+               <li>YouTube</li>
+             </ul>
+           </div>
+         </div>
+         <hr>
+         <p class="copyright">Copyright 2021 &#169; Shiv Sharma</p>
+       </div>
+       <script src="js/home.js"></script>
+     </div>
+     <!-- <h1> <%= data[0].City %></h1> -->
+
+     <!-- Js for toggle Menu -->
+     <script>
+       
+     </script>
+   </body>
+ </html>
+ 
