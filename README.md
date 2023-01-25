@@ -4,11 +4,12 @@ networking parts (Custom client and server-side headers, cors enabled, SSL certi
 proxy, load balancer, cache memory implementation, and proper business logic structure.
 
 # Used Technologies
+- NodeJs
 - Docker
 - React
 - Express
 - Mysql
-- Npm Cors
+- Cors
 - Nginx (for reverse proxy)
 - Bootstrap
 - Ejs (Template Engine)
