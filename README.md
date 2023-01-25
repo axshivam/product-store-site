@@ -1,11 +1,11 @@
-## Multi Services Application
-A Dockerize end to end app with separate microservices for frontend, backend, and database covers all the
-networking parts (Custom client and server-side headers, cors enabled, SSL certificate) with reverse
-proxy, load balancer, cache memory implementation, and proper business logic structure.
+## Product Store Site
+- An E-Commerce site with the facility of uploading various types of products and then showing the all product list in the user dashboard.
+- Developed crud APIs using express and stored the data in the MySQL database.
+- A React app by which vendors can upload the product by their dashboard with various flags (size, image, price), and the end user can view the product on their dashboard.
+- Nginx is used for reverse proxy, and the OpenSSL module provides security to the website, In API service cors are enabled by which we communicate with the frontend side (React).
 
 # Used Technologies
 - NodeJs
-- Docker
 - React
 - Express
 - Mysql
